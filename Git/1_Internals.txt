@@ -1,0 +1,34 @@
+ $ git --no-pager log -n 10     # show recent 10 logs without opening "less"
+
+ $ git --no-pager log -n 10 --oneline --parents --graph     # more decorated
+
+HASH = SHA
+-----------
+  Because it uses SHA-1 to generate commit hashes.
+
+  Creates using:
+  1. commit Message
+  2. author's name and email
+  3. date and time
+  4. Parents (previous) commit hashes
+
+
+  $ cat path/to/file        # prints the file
+  $ xxd path/to/file        # print the contents in hexadecimal
+
+__________________________________
+Tree (git way of storing "dir")  |
+Blob (git way of storing "file") |
+
+   (Commit)   Tree
+                 |______ Blob (long hash)
+                            \----  files
+                             \---  code
+
+$ git cat-file -p <hash>
+
+tree 98475n8v20485j987hv0987th9378984375vh09e8
+author Rexeonic <Rexeonic@example.email.com> 1234567885 -0700
+committer Rexeonic <Rexeonic@example.email.com> 1234567885 -0766
+
+<Commit Message>

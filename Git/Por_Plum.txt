@@ -1,0 +1,42 @@
+Porcelain (High Level)
+----------------------
+    They're the most used commmands in development lifecycle.
+    Used to usually "interact with your code".
+
+    $ git status
+    $ git add
+    $ git commit
+    $ git push
+    $ git pull
+    $ git log
+
+Plumbing (Low-Level)
+--------------------
+    commands related to the functionality of Git.
+
+    $ git apply
+    $ git commit-tree
+    $ git hash-object
+
+    $ git cat-file -p <hash>        # see the contents of the commits
+
+Several States in Git are:
+--------------------------
+
+  Untracked:  Not being tracked by Git
+  staged:     Marked for inclusion in the next commit
+  committed:  Saved to the repository's history
+
+
+--.--.--.--.--.--.--.--.--.--.--.--.--.--.--.--.--.--.--.--.--.--.--.--.--.--.--.--.--.--.--.--.--
+Here a quick peek of what's coming later:
+
+$ git config --list --local
+
+Checks if data is initialized in the Config file ( "<WorkingDir>/.git/config" or "~/.gitconfig")
+    $ git config --get user.name 
+    $ git config --get user.email
+
+
+$ git log --oneline
+$ git commit -m "Commit Message"

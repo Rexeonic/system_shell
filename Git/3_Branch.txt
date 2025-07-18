@@ -1,0 +1,31 @@
+ # Adds a new branch
+ $ git branch
+ 
+ # Rename a new branch
+ $ git branch -m oldname newname
+ 
+ # Create a new branch
+ $ git branch  my_new_branch
+            or
+ $ git switch -c my_new_branch
+
+
+        ⚫
+         |
+        ⚫
+         |\
+         | \
+         |  \
+         |   \
+        ⚫   ⚪
+       main   |
+              ⚪
+            my_new_branch
+
+              Here,
+              ⚫ ->  commits of main
+              ⚪ ->  commits of my_new_branch      
+
+
+ # Ouput is easier to read using decorator
+ $ git log --decorate=no/full/short --oneline

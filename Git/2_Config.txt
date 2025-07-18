@@ -1,0 +1,52 @@
+$ git config --add --global user.name "Github_username"
+$ git config --add --global user.email "github@email.com"
+
+$ git config --unset --global user.name
+$ git config --unset --global user.email
+
+$ git config --unset-all --global init.defaultBranch
+
+$ git config --remove-section section
+
+  Here 
+  o git config:       interact with git configuration
+  o --add:            flag indicating (want to add a configuration)
+  o --unset:          flag indicating (want to remove a configuration)
+  o --unset-all:      flag indicating (delete all the values of the key)
+  o --remove-section: flag indicating (delete the section from config file)
+  o --global:         configuration to be stored globally (~/.gitconfig)
+  o user:             The Section
+  o name:             key within the Section
+
+
+ $ cat .git/config      # this prints the local config file
+                    or
+ $ git config --list 
+                    or
+ $ git config --list --local        # both are same 
+
+
+ Key are in the format       <section>.<key>
+
+ GET
+ ---
+ $ git config --get <key>
+
+ example:
+ $ git config --get core.symlinks
+
+
+
+                           System
+                             |
+                             |
+                             |
+                           Global (overrides System)
+                             |
+                             |
+                             |
+                           Local (overrides global)
+                             |
+                             |
+                             |
+                           Worktree (overrides local)
