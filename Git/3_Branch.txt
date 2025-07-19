@@ -9,6 +9,8 @@
             or
  $ git switch -c my_new_branch
 
+ # To delete a branch
+ $ git branch -d branch_to_be_deleted
 
         ⚫
          |

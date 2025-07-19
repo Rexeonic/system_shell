@@ -1,0 +1,40 @@
+Fetch
+-----
+  This fetches the metadata from the remote, not the entirety of files.
+
+  Inside local repo:
+    
+    # fetches metadata from remote repository
+    $ git fetch
+
+
+
+  # Setuped remote, now on local repo "main" branch (do this)
+  $ git merge origin/main
+
+  Pull
+  ----
+    fetches actual file changes from a remote not metadata.
+    also used to propose some changes (usually on FOSS)
+
+    Syntax:
+
+    $ git pull [<remote>/<branch>]
+
+
+Working on FOSS (free and Open Source Software):
+  Step1: commit and push the changes to a new branch to GitHUB (remote repo)
+  Step2: Click "New PULL REQUEST"
+  Step3: Set the base branch "usually main" and the compare branch to "your_branch".
+         i.e want to merge "your_branch" to "main"
+  Step4: Create the PULL Request.
+
+
+  # to rebase on PULL from remote
+  $ git config --add --local pull.rebase true
+
+  # to merge on PULL from remote
+  $ git config --add --local pull.rebase false
+
+  # to fast-forward merge on PULL from remote
+  $ git config --add --local pull.ff true

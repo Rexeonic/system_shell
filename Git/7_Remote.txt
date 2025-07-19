@@ -1,0 +1,7 @@
+When treating "remote" as (authoritative source of truth), name it "origin".
+
+$ git remote add <name> <url>
+
+eg. 
+$ git remote add origin https://github.com/<username>/repository.git
+$ git remote add origin /home/<user>/code_directory

@@ -1,0 +1,28 @@
+$ git rebase main
+
+Plumbing for rebase:
+    Step1: Checkout the latest commit on "main"
+    Step2: Replays 1 commit at a time from "current_branch" onto "main"
+    Step3: Update the "feature_branch" to point to the last replayed commit.
+    Step4: doesn't affect "main" while "feature_branch" has all the changes.
+
+      Here,
+         main           -> is the base
+         feature_branch -> we want features on top of it.
+(Before Rebase)
+                    ⚫--⚫
+                   /
+                  /
+            ⚪--⚫---⚫--⚫
+
+(After Rebase)
+                             ⚫--⚫
+                             /
+                            /
+            ⚪--⚫---⚫--⚫
+              
+
+# Move diverging commits of "feature_branch", to the tip of the "base branch" on which the 
+# feature_branch is based on.
+
+Tip: Allows to do fast-forward merge (commit free history)  **has consequences**

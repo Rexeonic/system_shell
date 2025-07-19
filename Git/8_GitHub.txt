@@ -1,0 +1,11 @@
+  # push to a specific branch of remote repo
+  $ git push origin <branchname>
+
+    # eg. local's main changes to remote's main
+    $ git push origin main
+
+# Better option(rarely used)
+$ git push origin <localbranch>:<remotebranch>
+
+# Delete a branch (by pushing empty branch)
+$ git push origin :<remotebranch>

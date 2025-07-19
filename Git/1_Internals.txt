@@ -32,3 +32,7 @@ author Rexeonic <Rexeonic@example.email.com> 1234567885 -0700
 committer Rexeonic <Rexeonic@example.email.com> 1234567885 -0766
 
 <Commit Message>
+
+
+# Important Information
+git remote set-url origin https://<token>@github.com/<Username>/repository-name.git

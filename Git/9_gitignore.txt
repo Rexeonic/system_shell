@@ -1,0 +1,24 @@
+".gitignore" file stores all the files to be ignored (visible to all)
+
+".git/info/exclude" stores files to be ignored (visible to just user)
+
+.gitignore
+----------
+  will ignore all the file stated inside ".gitignore" from the directory in it file is present
+  to all of its leaf directories.
+
+  eg.  
+
+  src/
+  |
+  |-- main.py
+  |-- test.py
+  |-- venv/
+  |   |__ bin/
+  |       |__ activate
+  |       |__ python
+  |
+  .gitignore
+
+
+  where .gitignore containt "ven/bin/activate"

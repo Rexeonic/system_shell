@@ -1,0 +1,12 @@
+Rebase                                   |                          Merge
+------------------------------------------------------------------------------------------------
+1. gives a linear history                | 1.   preserves true history of the project.
+2. easier to read, understand            | 2.   creates a lot of merge commits (harder to read)
+                                         |
+***                                      |
+never rebase a public branch (like main) |
+onto anything else.                      |
+***                                      |
+can rebase your own branch               |
+(like feature_branch) with public branch |
+(like main)                              |

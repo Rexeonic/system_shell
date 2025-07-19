@@ -1,0 +1,26 @@
+Used to undo the last commit
+    or
+undo any changes in the index (staged but not committed changes)
+    and
+the Worktree (unstaged and not committed changes.)
+
+
+Git RESET Soft
+--------------
+
+$ git reset --soft <hash>
+
+        --soft  -> go back to previous commit but keep changes
+
+        ie.  commited    -->  staged
+             uncommitted -->  staged or unstages as before
+
+
+$ git reset --soft HEAD~<steps to go back, eg. 1 or 2>
+
+
+Git Reset HARD   ***Dangerous
+--------------
+  go back to previous commit and discard changes.
+
+$ git reset --hard <hash>

@@ -40,3 +40,7 @@ Checks if data is initialized in the Config file ( "<WorkingDir>/.git/config" or
 
 $ git log --oneline
 $ git commit -m "Commit Message"
+
+*****  destructive command (will change SHA) *****
+# change last commit's message
+$ git commit --ammend
