@@ -37,4 +37,4 @@ Working on FOSS (free and Open Source Software):
   $ git config --add --local pull.rebase false
 
   # to fast-forward merge on PULL from remote
-  $ git config --add --local pull.ff true
+  $ git config --add --local pull.ff only

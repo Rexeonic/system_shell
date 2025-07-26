@@ -1,0 +1,30 @@
+1. $ git clone userrepo.git
+
+    Clones the forked repo on machine.
+
+2. $ git remote add assignments-base https://github.com/cu-ecen-aeld/aesd-assignments.git
+
+    the local repo remote is setted up.
+
+3. $ git fetch assignments-base
+
+    by default, $ git fetch   "also pulls metadata from the default remote"
+    
+    This downloads all new commits, branches, and tags from the 
+    remote repository but does not modify your working directory or local branches.
+
+    Best Practices
+    --------------
+Frequent Fetching: Regularly fetch updates to stay informed about changes in the remote repository.
+Inspect Before Merging: Use git log or git diff to review fetched changes before merging.
+Prune Stale Branches: Clean up references to deleted remote branches using
+        $ git fetch --prune
+
+
+4. $ git merge assignments-base/master
+
+     local repo's master becomes up-to-date as with remote/master
+
+5. $ git submodule update --init --recursive
+
+      downloads all the files (even files inside sub-folder)

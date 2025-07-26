@@ -2,7 +2,7 @@ $ git rebase main
 
 Plumbing for rebase:
     Step1: Checkout the latest commit on "main"
-    Step2: Replays 1 commit at a time from "current_branch" onto "main"
+    Step2: Replays 1 commit at a time from "feature_branch" onto "main"
     Step3: Update the "feature_branch" to point to the last replayed commit.
     Step4: doesn't affect "main" while "feature_branch" has all the changes.
 

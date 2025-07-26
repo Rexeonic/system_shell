@@ -21,4 +21,20 @@
   .gitignore
 
 
-  where .gitignore containt "ven/bin/activate"
+  where .gitignore contains "ven/bin/activate"
+
+
+Rooted Patterns
+---------------
+  Patterns starting with / are anchored to the directory containing the .gitignore file
+
+  eg.  /main.py    (only main.py of the root directory will be ignored)
+
+Negation
+--------
+  can negate a pattern by prefixing it with an exclamation mark (!)
+
+  eg. 
+     # ignore all .txt files except important.txt
+     *.txt
+     !important.txt

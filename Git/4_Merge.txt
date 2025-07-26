@@ -1,10 +1,6 @@
 Merge Base (aka best common ancestor) is the nearest ancestor in common to both branches.
 
-(Merge Base)⚪--⚫---⚫
-              \         \
-               \        ⚪ (merge commit)
-                \       /
-                 ⚫--⚫
+
                  (feature branch)
 
 (Merge Base)⚪--⚫---⚫--⚪(merge commit)
@@ -17,3 +13,23 @@ Merge Base (aka best common ancestor) is the nearest ancestor in common to both 
 To merge feature_branch into "main":
     # Run this while on main branch 
     $ git merge feature_branch
+
+
+
+Plumbing of Merge:
+    Step1:  Finds the "merge base" of the two branches
+    Step2:  Replays changes from "feature_branch" onto "main" starting from merge base.
+    Step3:  records the result as a new commit
+    Step4:  it has 2 parents
+
+
+Fast-Forward Merge  [no merge commit is created]
+------------------
+
+(Before Merge)   ⚫---⚫
+                        \
+                        ⚪
+                        (new_branch)
+
+(After)          ⚫---⚫-- ⚪
+                       

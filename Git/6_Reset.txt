@@ -8,6 +8,7 @@ the Worktree (unstaged and not committed changes.)
 Git RESET Soft
 --------------
 
+# hash can be any commit
 $ git reset --soft <hash>
 
         --soft  -> go back to previous commit but keep changes
@@ -18,6 +19,10 @@ $ git reset --soft <hash>
 
 $ git reset --soft HEAD~<steps to go back, eg. 1 or 2>
 
+eg. 
+
+# moves to commit just before HEAD
+$ git reset --soft HEAD~1
 
 Git Reset HARD   ***Dangerous
 --------------

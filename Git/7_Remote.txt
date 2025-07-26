@@ -5,3 +5,16 @@ $ git remote add <name> <url>
 eg. 
 $ git remote add origin https://github.com/<username>/repository.git
 $ git remote add origin /home/<user>/code_directory
+
+
+# In bigger organizations
+origin   -> is the fork of the original repository
+upstream -> is the original repository
+
+REMOTE logs
+-----------
+
+  $ git log remote/branch
+
+  eg.
+     $ git log origin/feature_branch
